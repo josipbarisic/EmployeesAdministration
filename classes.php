@@ -3,7 +3,7 @@
 class Configuration
 {
 	public $host = "localhost";
-	public $dbName = "lv4baza";
+	public $dbName = "testdb";
 	public $username = "root";
 	public $password = "";
 
