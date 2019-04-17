@@ -23,7 +23,7 @@
 -- 
 
 
-USE lv4baza;
+USE testdb;
 
 SELECT 'CREATING DATABASE STRUCTURE' as 'INFO';
 
