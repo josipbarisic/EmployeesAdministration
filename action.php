@@ -72,32 +72,42 @@ switch ($action) {
 function conditions()
 {
 	$string = '';
-	if(!empty($_POST['birth_date']))
+	if(!empty($_POST['birth_date']) && $_POST['birth_date'] !='')
 	{
 		$date = $_POST['birth_date'];
-		$string .= "birth_date='".(string)$date."', ";
+		$string .= "birth_date='".$date."'";
 	}
-	if(!empty($_POST['first_name']))
+	if(!empty($_POST['first_name']) && $_POST['first_name'] != '')
 	{
-		$string .= "first_name='".$_POST['first_name']."', ";
+		$fname = $_POST['first_name'];
+
+		$string != '' ? $string .= ", first_name='".$fname."', " : $string .= "first_name='".$fname."'";
 	}
-	if(!empty($_POST['last_name']))
+	if(!empty($_POST['last_name']) && $_POST['last_name'] != '')
 	{
-		$string .= "last_name='".$_POST['last_name']."', ";
+		$lname = $_POST['last_name'];
+
+		$string != '' ? $string .= ", last_name='".$lname."', " : $string .= "last_name='".$lname."'";
 	}
-	if(!empty($_POST['gen_der']))
+	if(!empty($_POST['gen_der']) && $_POST['gen_der'] != '')
 	{
-		$string .= "gender='".$_POST['gen_der']."', ";
+		$gender = $_POST['gen_der'];
+
+		$string != '' ? $string .= ", gender='".$gender."', " : $string .= "gender='".$gender."'";
+		
 	}
-	if(!empty($_POST['hire_date']))
+	if(!empty($_POST['hire_date']) && $_POST['hire_date'] != '')
 	{
-		$string .= "hire_date='".$_POST['hire_date']."'";
+		$hiredate = $_POST['hire_date'];
+
+		$string != '' ? $string .= ", hire_date='".$hiredate."', " : $string .= "hire_date='".$hiredate."'";
+		
+		
 	}
 	return $string;
 }
 
 $_POST = array();
-$_POST['action_id'] = '';
 
 ?>
 
