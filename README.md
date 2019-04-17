@@ -7,7 +7,7 @@ MySQL Workbench:
 Create database
 
 (employees.sql is in the /db_master folder)
-(default database name in the employees.sql file is "lv4baza")
+(default database name in the employees.sql and classes.php file is "testdb")
 (change "SOURCE" path at the end of employees.sql file)
 
 Import data in database:
