@@ -47,7 +47,7 @@ switch ($action) {
 	case "update_employee":
 		$arr = array();
 		$setQuery = conditions();
-		$sQueryUpdate = "UPDATE lv4baza.employees SET ".$setQuery." WHERE emp_no=".$employeeId;
+		$sQueryUpdate = "UPDATE employees SET ".$setQuery." WHERE emp_no=".$employeeId;
 
 		$oUpdateStatement = $oConnection->query($sQueryUpdate);
 			
@@ -56,7 +56,7 @@ switch ($action) {
 
 		break;
 	case "delete_employee":
-		$sQueryDelete = "DELETE FROM lv4baza.employees WHERE emp_no=".$employeeId;
+		$sQueryDelete = "DELETE FROM employees WHERE emp_no=".$employeeId;
 
 		$oUpdateStatement = $oConnection->query($sQueryDelete);
 			
