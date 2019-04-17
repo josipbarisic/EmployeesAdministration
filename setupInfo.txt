@@ -8,4 +8,4 @@ Create database
 (change "SOURCE" path at the end of employees.sql file)
 
 Import data in database:
-<path_to_mysql> -u localhost -p <database_name> < <path_to_employees.sql>
+<path_to_mysql>mysql -u localhost -p <database_name> < <path_to_employees.sql>
