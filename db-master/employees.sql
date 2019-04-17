@@ -109,14 +109,14 @@ CREATE OR REPLACE VIEW current_dept_emp AS
 flush /*!50503 binary */ logs;
 
 SELECT 'LOADING departments' as 'INFO';
-source C:/wamp64/www/EmployeesAdministration/db-master/load_departments.dump;
+source C:/wamp64/www/EmployeesAdministration-master/EmployeesAdministration-master/db-master/load_departments.dump;
 SELECT 'LOADING employees' as 'INFO';
-source C:/wamp64/www/EmployeesAdministration/db-master/load_employees.dump ;
+source C:/wamp64/www/EmployeesAdministration-master/EmployeesAdministration-master/db-master/load_employees.dump ;
 SELECT 'LOADING dept_emp' as 'INFO';
-source C:/wamp64/www/EmployeesAdministration/db-master/load_dept_emp.dump ;
+source C:/wamp64/www/EmployeesAdministration-master/EmployeesAdministration-master/db-master/load_dept_emp.dump ;
 SELECT 'LOADING dept_manager' as 'INFO';
-source C:/wamp64/www/EmployeesAdministration/db-master/load_dept_manager.dump ;
+source C:/wamp64/www/EmployeesAdministration-master/EmployeesAdministration-master/db-master/load_dept_manager.dump ;
 SELECT 'LOADING titles' as 'INFO';
-source C:/wamp64/www/EmployeesAdministration/db-master/load_titles.dump ;
+source C:/wamp64/www/EmployeesAdministration-master/EmployeesAdministration-master/db-master/load_titles.dump ;
 
 /*source show_elapsed.sql ; */
