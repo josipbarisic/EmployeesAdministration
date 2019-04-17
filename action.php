@@ -45,7 +45,6 @@ switch ($action) {
 		}
 		break;
 	case "update_employee":
-		$arr = array();
 		$setQuery = conditions();
 		$sQueryUpdate = "UPDATE employees SET ".$setQuery." WHERE emp_no=".$employeeId;
 
